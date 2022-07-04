@@ -38,7 +38,6 @@ section.dados{
     flex-direction: column;
     height: 100%;
     width: 50%;
-    background-color: brown;
     padding: 2rem;
     border-radius: 1.5rem;
     color: var(--grayishcyan);
