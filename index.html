@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Área de aço - pavimento de concreto</title>
+</head>
+<body>
+    <main>
+        <section class="dados">
+            <label for="aco">Tipo de aço da tela</label>
+            <input type="number" id="aco">
+            <label for="comp-placa">Comprimento da placa (metros)</label>
+            <input type="number" id="comp-placa">
+            <label for="larg-placa">Largura da placa (metros)</label>
+            <input type="number" id="larg-placa">
+            <label for="esp-placa">Espessura da plca (metros)</label>
+            <input type="number" id="esp-placa">
+            <label for="diam-barra">Diâmetro da barra de ligação (mm)</label>
+            <input type="number" id="diam-barra">
+            <button>Calcular</button>
+        </section>
+        <section class="resultado">
+            <div id="txt-res">
+                <div id="nome-var">
+                    <p>Área de tela (mm²/m)</p>
+                    <p>Espaçamento barra de ligação (m)</p>
+                    <p>Comprimento barra de ligação (m)</p>
+                </div>
+                <div id="res">
+                    <p>109,84</p>
+                    <p>1,5</p>
+                    <p id="comp-bar-lig">1,1</p>
+                </div>
+            </div>
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+    
+</body>
+</html>

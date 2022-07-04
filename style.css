@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/*Arrumar responsividade, larguras fixas que estão atrapalhando*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --strongcyan: hsl(172, 67%, 45%);
+    --darkcyan: hsl(183, 100%, 15%);
+    --darkgcyan: hsl(186, 14%, 43%);
+    --grayishcyan: hsl(184, 14%, 56%);
+    --lightgcyan: hsl(185, 41%, 84%);
+    --verylightgcyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--strongcyan);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: auto; /*Problema*/
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+section.dados{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: brown;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: var(--grayishcyan);
+}
+section.dados label{
+    margin: 0.5rem;
+}
+section.dados input{
+    background-color: var(--lightgcyan);
+    border: none;
+    border-radius: 0.2rem;
+}
+input::-webkit-outner-spin-button, input::-webkit-inner-spin-button { /*Tira o spiner do input */
+    -webkit-appearance: none;
+    margin: 0;
+}
+section.dados #diam-barra{
+    margin-bottom: 1rem;
+}
+section.dados button, section.resultado button{
+    border: none;
+    height: 2rem;
+    border-radius: 0.5rem;
+    background-color:var(--darkgcyan);
+    color: var(--darkcyan);
+    cursor: pointer;
+}
+section.dados button:focus, section.resultado button:focus{
+    background-color:var(--strongcyan);
+    color: var(--darkcyan);
+}
+section.resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    background-color: var(--darkcyan);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+section.resultado #txt-res{
+    display: flex;
+    color: var(--grayishcyan);
+}
+section.resultado #nome-var p{
+    width: 70%;
+    padding-bottom: 1rem;
+}
+section.resultado #res p{
+    padding-bottom: 1rem;
+}
+section.resultado #res #comp-bar-lig{
+    padding-top: 1.5rem;
+}
+section.resultado button{
+    margin-top: 10rem;
+}
+
+
+@media (max-width: 760px){
+    main{
+        flex-direction: column;
+    }
+}
