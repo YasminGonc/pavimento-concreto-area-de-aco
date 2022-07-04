@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 
-/*Arrumar responsividade, larguras fixas que estão atrapalhando*/
-
 *{
     padding: 0;
     margin: 0;
@@ -30,7 +28,7 @@ main{
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    width: auto; /*Problema*/
+    width: auto; 
     background-color: var(--white);
     padding: 2rem;
     border-radius: 1.5rem;
@@ -52,17 +50,25 @@ section.dados input{
     background-color: var(--lightgcyan);
     border: none;
     border-radius: 0.2rem;
+    padding-left: 1rem;
 }
 input::-webkit-outner-spin-button, input::-webkit-inner-spin-button { /*Tira o spiner do input */
     -webkit-appearance: none;
     margin: 0;
 }
-section.dados #diam-barra{
-    margin-bottom: 1rem;
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+#acoVerif, #compVerif, #largVerif, #espVerif, #diamVerif{
+    font-size: 0.5rem;
+    text-align: right;
+    color: red;
 }
 section.dados button, section.resultado button{
     border: none;
     height: 2rem;
+    margin-top: 1rem;
     border-radius: 0.5rem;
     background-color:var(--darkgcyan);
     color: var(--darkcyan);
@@ -76,32 +82,110 @@ section.resultado{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     width: 50%;
     background-color: var(--darkcyan);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1.5rem;
 }
 section.resultado #txt-res{
     display: flex;
-    color: var(--grayishcyan);
+    color: var(--lightgcyan);
 }
 section.resultado #nome-var p{
     width: 70%;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 section.resultado #res p{
-    padding-bottom: 1rem;
-}
-section.resultado #res #comp-bar-lig{
-    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: right;
+    color: var(--strongcyan);
 }
 section.resultado button{
-    margin-top: 10rem;
+    margin-top: 9.5rem;
 }
 
-
+@media (max-width: 958px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 1rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 0.6rem;
+    }
+}
+@media (max-width: 922px){
+    section.resultado #res #comp-bar-lig{
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 830px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 1.5rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 842px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 2rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 3.5rem;
+    }
+}
 @media (max-width: 760px){
     main{
         flex-direction: column;
+        height: auto;
+    }
+    section.dados, section.resultado{
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+    section.resultado #res #esp-bar-lig{
+        margin-top: -0.5rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 0rem;
+    }
+}
+@media (max-width: 520px){
+    body{
+        background-color: var(--white);
+    }
+}
+@media (max-width: 474px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 1rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 437px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 2.5rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 414px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 3rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 3rem;
+    }
+}
+@media (max-width: 367px){
+    section.resultado #res #esp-bar-lig{
+        margin-top: 4rem;
+    }
+    section.resultado #res #comp-bar-lig{
+        margin-top: 3rem;
     }
 }

@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" denfer></script>
     <title>Área de aço - pavimento de concreto</title>
 </head>
 <body>
     <main>
         <section class="dados">
             <label for="aco">Tipo de aço da tela</label>
-            <input type="number" id="aco">
+            <input type="number" id="aco" placeholder="25, 50 ou 60">
+            <p id="acoVerif"></p>
+
             <label for="comp-placa">Comprimento da placa (metros)</label>
             <input type="number" id="comp-placa">
+            <p id="compVerif"></p>
+
             <label for="larg-placa">Largura da placa (metros)</label>
             <input type="number" id="larg-placa">
-            <label for="esp-placa">Espessura da plca (metros)</label>
+            <p id="largVerif"></p>
+
+            <label for="esp-placa">Espessura da placa (metros)</label>
             <input type="number" id="esp-placa">
+            <p id="espVerif"></p>
+
             <label for="diam-barra">Diâmetro da barra de ligação (mm)</label>
             <input type="number" id="diam-barra">
-            <button>Calcular</button>
+            <p id="diamVerif"></p>
+
+            <button onclick="calcular()">Calcular</button>
         </section>
         <section class="resultado">
             <div id="txt-res">
@@ -30,12 +41,12 @@
                     <p>Comprimento barra de ligação (m)</p>
                 </div>
                 <div id="res">
-                    <p>109,84</p>
-                    <p>1,5</p>
-                    <p id="comp-bar-lig">1,1</p>
+                    <p id="resTela">0,0</p>
+                    <p id="esp-bar-lig">0,0</p>
+                    <p id="comp-bar-lig">0,0</p>
                 </div>
             </div>
-            <button id="reset">Reset</button>
+            <button id="reset" onclick="limpar()">Reset</button>
         </section>
     </main>
     
