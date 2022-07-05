@@ -173,6 +173,9 @@ section.resultado button{
     }
 }
 @media (max-width: 414px){
+    main{
+        height: 99vh;
+    }
     section.resultado #res #esp-bar-lig{
         margin-top: 3rem;
     }
