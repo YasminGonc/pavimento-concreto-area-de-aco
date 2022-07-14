@@ -29,7 +29,5 @@
 <h2>Link de acesso</h2>
 https://yasmingonc.github.io/pavimento-concreto-area-de-aco/
 
-<h2>Layout</h2>
-![Capturar](https://user-images.githubusercontent.com/107756337/179036818-2032aded-3c31-489b-9f20-62a2cc883333.JPG)
 
 
