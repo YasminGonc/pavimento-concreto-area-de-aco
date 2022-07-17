@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" denfer></script>
+
+    
     <title>Área de aço - pavimento de concreto</title>
 </head>
 <body>
@@ -31,8 +33,9 @@
             <input type="number" id="diam-barra">
             <p id="diamVerif"></p>
 
-            <button onclick="calcular()">Calcular</button>
+            <button id="btn-calc">Calcular</button>
         </section>
+
         <section class="resultado">
             <div id="txt-res">
                 <div id="nome-var">
@@ -41,14 +44,15 @@
                     <p>Comprimento barra de ligação (m)</p>
                 </div>
                 <div id="res">
-                    <p id="resTela">0,0</p>
-                    <p id="esp-bar-lig">0,0</p>
-                    <p id="comp-bar-lig">0,0</p>
+                    <p id="resTela">0.0</p>
+                    <p id="esp-bar-lig">0.0</p>
+                    <p id="comp-bar-lig">0.0</p>
                 </div>
             </div>
-            <button id="reset" onclick="limpar()">Reset</button>
+            <button id="reset">Reset</button>
         </section>
     </main>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>

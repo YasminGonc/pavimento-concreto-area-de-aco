@@ -46,6 +46,7 @@ section.dados label{
     margin: 0.5rem;
 }
 section.dados input{
+    height: 2rem;
     background-color: var(--lightgcyan);
     border: none;
     border-radius: 0.2rem;
